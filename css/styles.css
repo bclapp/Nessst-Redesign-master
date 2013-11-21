@@ -1,7 +1,9 @@
 /*==============================
 	Global
 ==============================*/
-
+p {
+	line-height: 1.5em;
+}
 
 /*==============================
 	Structure & Layout 
@@ -123,10 +125,10 @@ nav a:active {
 	Students Page
 ==============================*/
 .members li {
-
+	float: left;
 	list-style: none;
 	margin: 20px 0 0 20px;
-
+	position: relative;
 	width: 440px;
 }
 
@@ -136,7 +138,7 @@ nav a:active {
 	color: #fff;
 	left: -20px;
 	padding: 10px;
-
+	position: absolute;
 	
 	/* CSS 3*/
 
@@ -152,6 +154,7 @@ nav a:active {
 	border-color: #333 transparent transparent transparent;
 	bottom: -39px;
 	border-width: 20px;
+	z-index: -1;
 
 }
 
