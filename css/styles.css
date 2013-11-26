@@ -1,6 +1,19 @@
 /*==============================
 	Global
 ==============================*/
+@font-face {
+    font-family: 'diner-fattregular';
+    src: url('../fonts/Diner-Fatt-webfont.eot');
+    src: url('../fonts/Diner-Fatt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Diner-Fatt-webfont.woff') format('woff'),
+         url('../fonts/Diner-Fatt-webfont.ttf') format('truetype'),
+         url('../fonts/Diner-Fatt-webfont.svg#diner-fattregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 p {
 	line-height: 1.5em;
 }
@@ -97,6 +110,17 @@ nav a:active {
 	margin-top: 10px;
 }
 
+nav li:nth-child(3) a:link{
+	background: url("../img/sprite.png") no-repeat 0 17px;
+	
+}
+
+nav li:nth-child(3) a:hover{
+	background: url("../img/sprite.png") no-repeat 0 -48px;
+	
+
+}
+
 
 /*==============================
 	Navigation: Page Indicators
@@ -118,6 +142,9 @@ nav a:active {
 }
 
 .about section h2 {
+	font-family: 'diner-fattregular', sans-serif;
+	letter-spacing: 2px;
+	font-size: 2.5em;
 	margin-left: -40px;
 }
 
@@ -182,4 +209,49 @@ nav a:active {
 
 label {
 
+}
+/*==============================
+			Gallery
+==============================*/
+/*Headings*/
+.gallery figure h1 {
+ 	color: orange;
+	position:absolute;
+	right: 0;
+}
+.gallery .control-button {
+  color: #ccc;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.gallery .control-button:hover {
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/*
+	Theme controls how everything looks in Gallery CSS.
+*/
+.gallery {
+  position: relative;
+}
+.gallery .item {
+  height: 400px;
+  overflow: hidden;
+  text-align: center;
+  background: #4d87e2;
+}
+.gallery .controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.gallery .control-button {
+  display: inline-block;
+  margin: 0 .02em;
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+  transition: color .1s;
 }
